@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- BS SETUP -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- JS SETUP -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<title>Exercise 3: Javascript Functions</title>
+</head>
+ <body>
+ 	<div class="container mt-5">
+		<h1>Greeting App</h1>
+ 		<hr>
+
+	 	<form>
+	 	<!== *for* and *id* are the same ==>
+	 		<label for="fname">Enter name: </label>
+	 		<br>
+	 		<input type="text" id="fname">
+
+	 		<br>
+	 		<br>
+	 		<h5 id="guestName">Welcome, guest!</h5>
+
+	 		<button type="button" class="btn btn-info" onclick="greet()">Greet</button>
+	 		<button type="button" class="btn btn-info" onclick="window.location.reload()">Refresh</button>
+	 	</form>
+
+ 		<script type="text/javascript">
+ 			function greet(){
+
+ 		// to give var "name" a value, get from the input (of the user) *fname* ---- value of var (name) = the content of id (fname)
+ 				var name = document.getElementById ('fname').value;
+
+ 			document.getElementById('guestName').innerHTML = 'Welcome, ' + name + '!';
+ 				}
+
+
+ 		</script>
+ 	</div>
+
+	<div class="container footer mt-3 text-center"><h4><a href="https://github.com/ALedesma-9R/Q2EX2">&#169; AY 2024-2025 | ICT 9-Ruby | Exercise 3: JS Functions | Aisha Ashley O. Ledesma </a></h4></div>
+ </body>
+</html>
